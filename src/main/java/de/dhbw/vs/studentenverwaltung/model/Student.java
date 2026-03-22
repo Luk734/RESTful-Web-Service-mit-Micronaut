@@ -1,15 +1,35 @@
 package de.dhbw.vs.studentenverwaltung.model;
 
 import io.micronaut.serde.annotation.Serdeable;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 
+// Erlaubt JSON-Konvertierung (JSON ↔ Objekt)
 @Serdeable
 public class Student {
 
     private Long id;
+
+    // Darf nicht leer sein
+    @NotBlank
     private String vorname;
+
+    // Darf nicht leer sein
+    @NotBlank
     private String nachname;
+
+    // Darf nicht leer sein und muss genau 7 Ziffern haben (z.B. "1234567")
+    @NotBlank
+    @Pattern(regexp = "\\d{7}", message = "matrikelnummer muss genau 7 Ziffern enthalten")
     private String matrikelnummer;
+
+    // Darf nicht leer sein
+    @NotBlank
     private String studiengang;
+
+    // Mindestens 1, kein Maximum
+    @Min(1)
     private int semester;
 
     public Student() {
@@ -24,6 +44,7 @@ public class Student {
         this.semester = semester;
     }
 
+    // Getter und Setter für alle Felder
     public Long getId() {
         return id;
     }
