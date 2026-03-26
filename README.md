@@ -10,6 +10,16 @@ Fuer besseres Lernen und Nachvollziehen ist die Doku in 4 Dateien aufgeteilt:
 4. `README-04-SETUP-START-TEST.md` - Setup, Start und Testanleitung
 
 ---
+Quellen für das Paper:
+https://www.mdpi.com/2076-3417/13/3/1343
+https://link.springer.com/chapter/10.1007/978-3-658-45192-9_5
+https://ieeexplore.ieee.org/abstract/document/9245290
+https://www.mdpi.com/1424-8220/22/20/7759
+https://books.google.de/books?id=ZvM5EAAAQBAJ
+https://ieeexplore.ieee.org/abstract/document/10741246
+https://books.google.de/books?id=3zkzEAAAQBAJ
+https://roy.gbiv.com/pubs/dissertation/fielding_dissertation.pdf
+https://urn.kb.se/resolve?urn=urn:nbn:se:bth-26504
 
 ## Inhaltsverzeichnis
 
